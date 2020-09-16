@@ -1,3 +1,14 @@
 {
-
+    "generic": {
+        "cancel": "Cancelar",
+        "next": "Siguiente"
+    },
+    "wizard": {
+        "welcome": "Bienvenid@ a la Cuenta Corriente OpenClose de ",
+        "beforeStartTitle": "Antes de empezar",
+        "beforeStartText": "Queremos agradecerle que haya depositado su confianza en la Cuenta Corriente OpenClose. A continuación le guiaremos en un pequeño formulario para que pueda facilitarnos los datos necesarios para completar la contratación.",
+        "firstStepInfo": "En primer lugar queremos asegurarnos de que acepta que tratemos sus datos según nuestra política de protección de datos.",
+        "userAgreementLabel": "Acepto el uso de mis datos según la política de protección de datos y confirmo que soy mayor de edad",
+        "userAgreementTooltip": "Tienes que aceptar las condiciones"
+    }
 }

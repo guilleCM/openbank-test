@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './../src/locale/index';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <I18nextProvider i18n={i18n}>
+            <App/>
+        </I18nextProvider>
     </Provider>,
     document.getElementById('root'));
 
