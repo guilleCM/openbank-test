@@ -1,0 +1,13 @@
+$primary-color: #FF0049;
+$secondary-color: #002B45;
+$terciary-color: #FFF1E5;
+
+$white: #FFFFFF;
+$black: #000000;
+$theme-colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "light": $white,
+    "dark": $black
+);
+@import "~bootstrap/scss/bootstrap";
