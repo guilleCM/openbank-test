@@ -17,15 +17,14 @@ import Button from 'react-bootstrap/Button';
 import logo from './../../assets/img/logo_openbank.png';
 
 function Step1() {
-    const step = useSelector(currentStep);
+    // const step = useSelector(currentStep);
     const dispatch = useDispatch();
     const [userAgreement, setUserAgreement] = useState(false);
     const [t] = useTranslation();
     return (
         <Row>
-            <Col md={{ span: 8, offset: 2}}>
-                <span>Estás en el paso {step} de 3</span>
-                <h1>
+            <Col md={{ span: 10, offset: 1}} lg={{ span: 8, offset: 2}}>
+                <h1 style={{marginTop: '1rem'}}>
                     {t('wizard:welcome')} <img src={logo} alt="OpenBank"/> 
                 </h1>
                 <h3>
@@ -47,7 +46,6 @@ function Step1() {
                     onChange={() => setUserAgreement(!userAgreement)}
                 />
                 
-                <Button variant="outline-secondary">{t('generic:cancel')}</Button>
                 <Button
                     className="float-right"
                     variant="secondary" 

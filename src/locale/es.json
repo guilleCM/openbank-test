@@ -9,6 +9,12 @@
         "beforeStartText": "Queremos agradecerle que haya depositado su confianza en la Cuenta Corriente OpenClose. A continuación le guiaremos en un pequeño formulario para que pueda facilitarnos los datos necesarios para completar la contratación.",
         "firstStepInfo": "En primer lugar queremos asegurarnos de que acepta que tratemos sus datos según nuestra política de protección de datos.",
         "userAgreementLabel": "Acepto el uso de mis datos según la política de protección de datos y confirmo que soy mayor de edad",
-        "userAgreementTooltip": "Tienes que aceptar las condiciones"
+        "userAgreementTooltip": "Tienes que aceptar las condiciones",
+        "createNewPasswordTitle": "Crea tu Contraseña",
+        "createNewPasswordInfo": "Para continuar con el proceso, es necesario que configure una contraseña a su producto.",
+        "passwordInputLabel": "Escribe tu contraseña",
+        "passwordRepeatInputLabel": "Repite la contraseña",
+        "passwordLeadInputLabel": "Crear una pista para recordar la contraseña (opcional)",
+        "passwordLeadInputHelp": "caracteres"
     }
 }

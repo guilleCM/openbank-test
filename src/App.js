@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Container from 'react-bootstrap/Container';
 
 import OpenbankLogo from './assets/img/key_openbank.png';
+import Wizard from "./views/wizard";
 import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
 import Step3 from "./views/Feedback";
@@ -15,7 +16,7 @@ class App extends Component {
             <div className="App">
                 <main className="App-content">
                     <Container>
-                        <Step1 />
+                        <Wizard />
                     </Container>
                 </main>
             </div>
