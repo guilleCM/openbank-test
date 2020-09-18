@@ -14,7 +14,7 @@
         "createNewPasswordInfo": "Para continuar con el proceso, es necesario que configure una contraseña a su producto.",
         "passwordInputLabel": "Escribe tu contraseña",
         "passwordRepeatInputLabel": "Repite la contraseña",
-        "passwordLeadInputLabel": "Crear una pista para recordar la contraseña (opcional)",
-        "passwordLeadInputHelp": "caracteres"
+        "passwordHintInputLabel": "Crear una pista para recordar la contraseña (opcional)",
+        "passwordHintInputHelp": "caracteres"
     }
 }
