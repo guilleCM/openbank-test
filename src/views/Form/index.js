@@ -115,18 +115,23 @@ function Step2() {
                         <p>
                         {t('wizard:createNewPasswordInfo')}
                         </p>
-                        <Form onSubmit={(event) => handleOnSubmit(event)}>
+                        <Form onSubmit={(event) => handleOnSubmit(event)} role="openbankForm">
                             <Form.Row>
                                 <Form.Group as={Col} controlId="password">
                                     <Form.Label><strong>{t('wizard:passwordInputLabel')} *</strong></Form.Label>
                                     <Form.Control
                                         type="password" 
+                                        role="inputPassword"
                                         placeholder=""
                                         defaultValue={passwordDefaultValue || ''}
                                         isInvalid={validated && errors.password !== undefined}
                                         isValid={validated && errors.password === undefined}
                                     />
-                                    <Form.Text id="passwordHelpBlock" muted>
+                                    <Form.Text 
+                                        id="passwordHelpBlock"
+                                        role="inputPasswordHelpBlock" 
+                                        muted
+                                    >
                                         <ul className={validated && errors.passwordRepeat !== undefined ? "help-block-with-errors" : ""}>
                                             <li className={!validated || (errors.password && errors.password.includes('minLength')) ? "" : "help-text-validated"}>
                                                 {t('form:textMinLength', {amount: inputPassword.minLength})}
@@ -152,12 +157,17 @@ function Step2() {
                                     <Form.Label><strong>{t('wizard:passwordRepeatInputLabel')} *</strong></Form.Label>
                                     <Form.Control 
                                         type="password" 
+                                        role="inputPasswordRepeat"
                                         placeholder="" 
                                         defaultValue={passwordDefaultValue || ''}
                                         isInvalid={validated && errors.passwordRepeat !== undefined}
                                         isValid={validated && errors.passwordRepeat === undefined}
                                     />
-                                    <Form.Text id="passwordRepeatHelpBlock" muted>
+                                    <Form.Text 
+                                        id="passwordRepeatHelpBlock" 
+                                        role="inputPasswordRepeatHelpBLock" 
+                                        muted
+                                    >
                                         <ul className={validated && errors.passwordRepeat !== undefined ? "help-block-with-errors" : ""}>
                                             <li className={!validated || (errors.passwordRepeat && errors.passwordRepeat.includes('matchFirstPassword')) ? "" : "help-text-validated"}>
                                                 {t('form:passwordMustMatch')}
@@ -175,12 +185,17 @@ function Step2() {
                                     <Form.Label><strong>{t('wizard:passwordHintInputLabel')}</strong></Form.Label>
                                     <Form.Control 
                                         type="text" 
+                                        role="inputPasswordHint"
                                         placeholder="" 
                                         defaultValue={passwordHintDefaultValue || ''}
                                         isInvalid={validated && errors.passwordHint !== undefined}
                                         isValid={validated && errors.passwordHint === undefined}
                                     />
-                                    <Form.Text id="passwordHintHelpBlock" muted>
+                                    <Form.Text 
+                                        id="passwordHintHelpBlock" 
+                                        role="inputPasswordHintHelpBlock"
+                                        muted
+                                    >
                                         <ul className={validated && errors.passwordHint !== undefined ? "help-block-with-errors" : ""}>
                                             <li className={!validated || (errors.passwordHint && errors.passwordHint.includes('maxLength')) ? "" : "help-text-validated"}>
                                                 {`${passwordHintCount}/${passwordHintMaxLength} ${t('wizard:passwordHintInputHelp')}`}
@@ -203,6 +218,7 @@ function Step2() {
                                 className="float-right"
                                 variant="secondary" 
                                 type="submit"
+                                role="submitButton"
                             >
                                 {t('layout:next')}
                             </Button>
@@ -211,7 +227,7 @@ function Step2() {
                     :
                     <div className="openbank-loader">
                         <Spinner animation="border" role="status" variant="primary">
-                            <span className="sr-only">{t('layour:sending')}</span>
+                            <span className="sr-only">{t('layout:sending')}</span>
                         </Spinner>
                         <h1>{t('layout:sending')}</h1>
                     </div>

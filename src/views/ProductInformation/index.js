@@ -34,6 +34,8 @@ function Step1() {
                 <FormCheck 
                     label={t('wizard:userAgreementLabel')}
                     type="checkbox"
+                    name="userAgreementCheckbox"
+                    role="inputUserAgreement"
                     style={{
                         paddingBottom: '1rem',
                     }}
@@ -44,6 +46,7 @@ function Step1() {
                 <Button
                     className="float-right"
                     variant="secondary" 
+                    role="nextStepButton"
                     disabled={!userAgreement}
                     title={userAgreement ? '' : t('wizard:userAgreementTooltip')}
                     onClick={() => dispatch(increment())}

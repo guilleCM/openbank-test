@@ -25,6 +25,7 @@ function FeedbackError(props) {
             <Button
                 className="float-right"
                 variant="outline-primary" 
+                role="backToFormStepButton"
                 onClick={() => dispatch(goToFormStep())}
             >
                 {t('layout:return')}
@@ -46,6 +47,7 @@ function FeedbackSuccess() {
             <Button
                 className="float-right"
                 variant="outline-primary" 
+                role="loginButton"
             >
                 {t('layout:login')}
             </Button>

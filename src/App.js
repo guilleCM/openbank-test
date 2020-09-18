@@ -9,7 +9,7 @@ import i18next from "i18next";
 
 import { setLocale } from './appReducer';
 import OpenbankLogo from './assets/img/logo_openbank.png';
-import Wizard from "./views/wizard";
+import Wizard from "./views/Wizard";
 
 import "./App.scss";
 
