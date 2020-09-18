@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
   isLoading,
+  password,
+  passwordHint,
   fetchForm
 } from './../wizardReducer';
 import { useTranslation } from 'react-i18next';
@@ -73,9 +75,11 @@ function getErrors(inputs) {
 
 function Step2() {
     const loading = useSelector(isLoading);
+    const passwordDefaultValue = useSelector(password);
+    const passwordHintDefaultValue = useSelector(passwordHint);
     const dispatch = useDispatch();
     const [validated, setValidated] = useState(false);
-    const [passwordHintCount, setPasswordHintCount] = useState(0);
+    const [passwordHintCount, setPasswordHintCount] = useState(passwordHintDefaultValue ? passwordHintDefaultValue.length : 0);
     const inputPassword = inputs.filter(input => input.name === 'password')[0];
     const passwordHintMaxLength = inputs.filter(input => input.name === 'passwordHint')[0].maxLength;
     const [errors, setErrors] = useState(false);
@@ -117,7 +121,7 @@ function Step2() {
                                     <Form.Control
                                         type="password" 
                                         placeholder=""
-                                        defaultValue=""
+                                        defaultValue={passwordDefaultValue || ''}
                                         isInvalid={validated && errors.password !== undefined}
                                         isValid={validated && errors.password === undefined}
                                     />
@@ -148,7 +152,7 @@ function Step2() {
                                     <Form.Control 
                                         type="password" 
                                         placeholder="" 
-                                        defaultValue=""
+                                        defaultValue={passwordDefaultValue || ''}
                                         isInvalid={validated && errors.passwordRepeat !== undefined}
                                         isValid={validated && errors.passwordRepeat === undefined}
                                     />
@@ -171,7 +175,7 @@ function Step2() {
                                     <Form.Control 
                                         type="text" 
                                         placeholder="" 
-                                        defaultValue=""
+                                        defaultValue={passwordHintDefaultValue || ''}
                                         isInvalid={validated && errors.passwordHint !== undefined}
                                         isValid={validated && errors.passwordHint === undefined}
                                     />
