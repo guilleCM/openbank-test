@@ -1,7 +1,9 @@
 {
     "layout": {
         "cancel": "Cancelar",
-        "next": "Siguiente"
+        "next": "Siguiente",
+        "login": "Acceder",
+        "return": "Volver"
     },
     "wizard": {
         "welcome": "Bienvenid@ a la Cuenta Corriente OpenClose de ",
@@ -15,7 +17,12 @@
         "passwordInputLabel": "Escribe tu contraseña",
         "passwordRepeatInputLabel": "Repite la contraseña",
         "passwordHintInputLabel": "Crear una pista para recordar la contraseña (opcional)",
-        "passwordHintInputHelp": "caracteres"
+        "passwordHintInputHelp": "caracteres",
+        "feedbackSuccessTitle": "Tu password ya está creada!",
+        "feedbackSuccessText": "Ahora puedes acceder a tu producto con ella.",
+        "feedbackErrorTitle": "Ha habido un error",
+        "feedbackErrorText": "No se ha podido establecer tu contraseña. Por favor, intentalo más tarde.",
+        "feedbackErrorCode": "Código de error"
     },
     "form": {
         "textMinLength": "Mínimo {{amount}} caracteres",

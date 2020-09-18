@@ -6,6 +6,7 @@ import {
 
 import Step1 from "./ProductInformation";
 import Step2 from "./Form";
+import Step3 from "./Feedback";
 import Stepper from "./Stepper";
 
 function Wizard() {
@@ -18,6 +19,9 @@ function Wizard() {
             }
             {step === 2 &&
                 <Step2/>
+            }
+            {step === 3 &&
+                <Step3/>
             }
         </>
     );

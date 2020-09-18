@@ -7,7 +7,6 @@
 	margin:0 auto;
 	background-color:#FFFFFF;
 	padding-bottom: 1rem;
-	box-shadow: 0 3px 8px -6px rgba(0,0,0,.50);
 }
 .openbank-stepper-horizontal .openbank-step {
 	display:table-cell;
@@ -42,6 +41,7 @@
 	color:#FFFFFF;
 }
 .openbank-stepper-horizontal.openbank-theme .openbank-step.active .openbank-step-circle {
+	box-shadow: 2px 3px 10px 0px rgba(0,0,0,.50);
 	background-color:$secondary-color;
 }
 .openbank-stepper-horizontal .openbank-step.active .openbank-step-circle {

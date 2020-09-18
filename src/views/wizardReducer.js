@@ -23,8 +23,8 @@ export const slice = createSlice({
     step: 1,
     totalSteps: 3,
     loading: 'idle',
-    password: '',
-    passwordHint: '',
+    password: undefined,
+    passwordHint: undefined,
     error: false,
   },
   reducers: {
@@ -33,9 +33,14 @@ export const slice = createSlice({
     },
     decrement: state => {
       state.step -= 1;
+      if (state.step === 1) { //reset form
+        state.password = undefined;
+        state.passwordHint = undefined;
+      }
     },
-    incrementByAmount: (state, action) => {
-      state.step += action.payload;
+    goToFormStep: (state) => {
+      state.step = 2;
+      state.error = false;
     },
   },
   extraReducers: {
@@ -64,10 +69,13 @@ export const slice = createSlice({
   }
 });
 
-export const { increment, decrement, incrementByAmount } = slice.actions;
+export const { increment, decrement, goToFormStep } = slice.actions;
 
+export const hasError = state => state.wizard.error;
 export const isLoading = state => state.wizard.loading === 'pending';
 export const currentStep = state => state.wizard.step;
 export const totalSteps = state => state.wizard.totalSteps;
+export const password = state => state.wizard.password;
+export const passwordHint = state => state.wizard.passwordHint;
 
 export default slice.reducer;
