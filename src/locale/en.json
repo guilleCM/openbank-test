@@ -1,5 +1,39 @@
 {
+    "layout": {
+        "cancel": "Cancel",
+        "next": "Next",
+        "login": "Login",
+        "return": "Back",
+        "sending": "Sending...",
+        "localeES": "Español",
+        "localeEN": "English"
+    },
     "wizard": {
-        "welcome": "Welcome to the OpenClose Checking Account by "
+        "welcome": "Welcome to the OpenClose Checking Account of ",
+        "beforeStartTitle": "Before you start",
+        "beforeStartText": "We would like to thank you for placing your trust in the OpenClose Current Account. Next we will guide you in a small form so that you can provide us with the necessary data to complete the contract",
+        "firstStepInfo": "First of all we want to make sure that you accept that we treat your data according to our data protection policy",
+        "userAgreementLabel": "I agree to the use of my data according to the data protection policy and confirm that I am of legal age",
+        "userAgreementTooltip": "You have to accept the conditions",
+        "createNewPasswordTitle": "Create your Password",
+        "createNewPasswordInfo": "To continue the process, you need to set a password to your product",
+        "passwordInputLabel": "Write down your password",
+        "passwordRepeatInputLabel": "Repeat password",
+        "passwordHintInputLabel": "Create a hint to remember the password (optional)",
+        "passwordHintInputHelp": "characters",
+        "feedbackSuccessTitle": "Your password is already created!",
+        "feedbackSuccessText": "Now you can access your product with it",
+        "feedbackErrorTitle": "There has been an error",
+        "feedbackErrorText": "Your password could not be set. Please try again later",
+        "feedbackErrorCode": "Error code"
+    },
+    "form": {
+        "textMinLength": "Minimum {{amount}} characters",
+        "textMaxLength": "Maximum {{amount}} characters",
+        "containNumber": "Contains 1 number",
+        "containCapitalLetter": "Contains a capital letter",
+        "passwordMustMatch": "The password must match",
+        "required": "You must fill in this field",
+        "textExceededLength": "You must not exceed the characters"
     }
 }

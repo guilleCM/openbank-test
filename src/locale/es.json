@@ -3,7 +3,10 @@
         "cancel": "Cancelar",
         "next": "Siguiente",
         "login": "Acceder",
-        "return": "Volver"
+        "return": "Volver",
+        "sending": "Enviando...",
+        "localeES": "Español",
+        "localeEN": "English"
     },
     "wizard": {
         "welcome": "Bienvenid@ a la Cuenta Corriente OpenClose de ",
