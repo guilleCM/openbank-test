@@ -100,6 +100,7 @@ function Step2() {
         }
     }
     useEffect(() => {
+        window.scrollTo(0, 0);
         document.querySelector('#password').focus();
     }, [])
 
@@ -210,9 +211,9 @@ function Step2() {
                     :
                     <div className="openbank-loader">
                         <Spinner animation="border" role="status" variant="primary">
-                            <span className="sr-only">Loading...</span>
+                            <span className="sr-only">{t('layour:sending')}</span>
                         </Spinner>
-                        <h1>Enviando...</h1>
+                        <h1>{t('layout:sending')}</h1>
                     </div>
                 }
             </Col>
