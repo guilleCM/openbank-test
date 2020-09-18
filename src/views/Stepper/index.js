@@ -1,10 +1,6 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
+import { useSelector } from 'react-redux';
 import {
-    decrement,
-    increment,
-    incrementByAmount,
-    incrementAsync,
     currentStep,
     totalSteps,
 } from './../wizardReducer';

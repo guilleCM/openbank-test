@@ -1,3 +1,16 @@
+@import "./../../styles/base";
+
 .help-text-validated {
     text-decoration: line-through;
+}
+.help-block-with-errors li:not(.help-text-validated) {
+    color: $error;
+}
+.openbank-loader {
+    padding: 2rem;
+    text-align: center;
+}
+.openbank-loader h1 {
+    display: inline;
+    margin-left: 1rem;
 }

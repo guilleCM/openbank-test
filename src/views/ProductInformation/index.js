@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import {
-  decrement,
   increment,
-  incrementByAmount,
-  incrementAsync,
-  currentStep,
-  totalSteps,
 } from './../wizardReducer';
 import { useTranslation } from 'react-i18next';
 import Row from 'react-bootstrap/Row';
@@ -53,7 +48,7 @@ function Step1() {
                     title={userAgreement ? '' : t('wizard:userAgreementTooltip')}
                     onClick={() => dispatch(increment())}
                 >
-                    {t('generic:next')}
+                    {t('layout:next')}
                 </Button>
             </Col>
         </Row>

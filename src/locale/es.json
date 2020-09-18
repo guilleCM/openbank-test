@@ -1,5 +1,5 @@
 {
-    "generic": {
+    "layout": {
         "cancel": "Cancelar",
         "next": "Siguiente"
     },
@@ -16,5 +16,14 @@
         "passwordRepeatInputLabel": "Repite la contraseña",
         "passwordHintInputLabel": "Crear una pista para recordar la contraseña (opcional)",
         "passwordHintInputHelp": "caracteres"
+    },
+    "form": {
+        "textMinLength": "Mínimo {{amount}} caracteres",
+        "textMaxLength": "Máximo {{amount}} caracteres",
+        "containNumber": "Contiene 1 número",
+        "containCapitalLetter": "Contiene una mayúscula",
+        "passwordMustMatch": "La contraseña debe coincidir",
+        "required": "Debes rellenar este campo",
+        "textExceededLength": "No debes exceder los caracteres"
     }
 }
