@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/openbank-test/static/css/main.f3e8eca3.chunk.css",
+    "main.js": "/openbank-test/static/js/main.fb04281b.chunk.js",
+    "main.js.map": "/openbank-test/static/js/main.fb04281b.chunk.js.map",
+    "runtime~main.js": "/openbank-test/static/js/runtime~main.25fb9028.js",
+    "runtime~main.js.map": "/openbank-test/static/js/runtime~main.25fb9028.js.map",
+    "static/js/2.a2e41b62.chunk.js": "/openbank-test/static/js/2.a2e41b62.chunk.js",
+    "static/js/2.a2e41b62.chunk.js.map": "/openbank-test/static/js/2.a2e41b62.chunk.js.map",
+    "index.html": "/openbank-test/index.html",
+    "precache-manifest.2c0b2e5be463a8e19bf8a1e29d8b1027.js": "/openbank-test/precache-manifest.2c0b2e5be463a8e19bf8a1e29d8b1027.js",
+    "service-worker.js": "/openbank-test/service-worker.js",
+    "static/css/main.f3e8eca3.chunk.css.map": "/openbank-test/static/css/main.f3e8eca3.chunk.css.map"
+  }
+}
